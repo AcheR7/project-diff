@@ -10,5 +10,9 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "type": "module",
+  "description": "",
+  "dependencies": {
+    "commander": "^12.1.0"
+  }
 }
