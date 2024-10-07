@@ -1,11 +1,11 @@
 #!/usr/bin/env node
-import { program } from 'commander';
+import { Command } from 'commander';
 
-const command = () => {
-  console.log('Hello, World!');
-};
+const program = new Command();
 
 program
-  .version('0.0.1')
-  .action(command)
-  .parse(process.argv);
+  .name('gendiff')
+  .description('Compares two configuration files and shows a difference.')
+  .version('1.0.0');
+
+program.parse();
